@@ -14,8 +14,3 @@
 .mb10{margin-bottom: 10px !important;}
 .mb15{margin-bottom: 15px !important;}
 .mb20{margin-bottom: 20px !important;}
-
-.h2line:after{
-	content:"";display: block;width: 200px;height: 1px;
-	background:#000;margin: 10px auto;
-}
