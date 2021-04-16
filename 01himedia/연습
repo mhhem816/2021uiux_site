@@ -1,0 +1,61 @@
+<body>
+  <header>
+    <div class="1">
+      <div class="2 clearfix">
+        <ul>
+          <li>login</li>
+          <li>join</li>
+          <li>contact</li>
+          <li>english</li>
+        </ul>
+      </div>
+    </div>
+    <h2>himedia</h2>
+    <div3>
+      <ul>
+        <li>회사소개</li>
+        <li>제품소개</li>
+        <li>사업영역</li>
+        <li>고객센터</li>
+        <li>인재채용</li>
+      </ul>
+    </div3>
+  </header>
+  <div class="vW">
+    <div class="w">
+      <img src="images/main_slider_img.png" alt="light" class="vimg1">
+      <img src="images/main_slider_txt.png" alt="txt" class="vimg2">
+  </div>
+
+  </div>
+  <section>
+      <ul>
+        <li><a href="javascript:void(0)"></a></li>
+        <img src="해 이미지" alt="사회공헌">
+        <h3>사회공헌</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </ul>
+  </section>
+
+</body>
+
+<style>
+  header{width:980px;}
+  .1{border-bottom: 1px solid #000;}
+  .2{width:330px; float:rigft; }
+  .2 li {float::left; padding:0 10px; position:relative;}
+  .2 li:last-chlid  {padding-right:0;}
+  .2 li a {display:block; line-hight:35px; font-size:12px;}
+  .2 li:after{content:""; position:absolute; width:1px height:10px; background:#00f;}
+  .3  a {background:#fff;}
+  .3 ul {width: 980px; margin:0 auto; }
+  .3 li {folat:left; width:calc(100% / 6); border-left:1px solid #fff;}
+  .3 ul li:list-child{border-right:1px solid #fff;  }
+  .3 a {display:block;  line-height:40px; text-aline:center; color:#fff;}
+  .3 a:hover{color:#ccc; background: #ccc;}
+  .vW{overflow:hedden; height: 400px; background-break:#fff srl;}
+  .vW .vimg,
+  .vW .vimg2{position:absolute;}
+  .vW .vimg1{right:0 top:-10px;}
+  .vW .vimg2{left:0 top:76px;}
+</style>
