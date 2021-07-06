@@ -1,0 +1,69 @@
+@charset "UTF-8";
+body{font-family: "Noto Serif KR";}
+
+.section{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section.page1{background-image: url(../images/bg01.png);}
+.section.page2{background-image: url(../images/bg02.png);}
+.section.page3{background-image: url(../images/bg03.png);}
+.section.page4{background-image: url(../images/bg04.png);}
+
+header{width: 100%;}
+.navbar{position: fixed;z-index:1;background: rgba(0,0,0,0.46);}
+
+/* .navbar .collapse{display:flex; justify-content: center; align-items: center;} */
+.navbar li{transition:0.3s;border-bottom: 5px solid transparent;}
+.navbar li.active:hover{border-bottom:5px solid rgb(31, 114, 68);}
+.navbar .nav-item a{color:#fff;}
+#fp-nav.right{right:10px;}
+.fp-tooltip.right{right:20px}
+.txt1st{opacity: 0; transition:0.5s; transform: translateX(-300px);}
+.txt1st.end{opacity:1; transform:translateY(0)}
+.txt1st h3{font-size:48px;}
+.txt1st p{font-size:17.6px;}
+.scroll{
+    position: absolute;bottom: 30px;left:200px;transform:translateX(-50%);
+    animation-name:xScroll;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+
+.page2 .txt2st h3{color:#2C7152 !important; font-weight: bold;
+    font-size: 46px;}
+
+.section.page5{background-color:#363636;}
+.icon li {float: left;}
+
+
+@keyframes xScroll{
+    from{bottom:30px;}
+    to{bottom:50px;}
+}
+
+@media screen and (max-width:1000px){
+    .navbar li.active{border-bottom: 5px solid transparent;}
+    .txt1st{text-align: center;}
+}
+
+.artA{opacity: 0; transition: 0.8s; transform: translateX(-900px) rotate(359deg);}
+.artA.end{opacity: 1; transform: translateX(0) rotate(0deg); }
+
+/* .artA.end:hover{transform: scale(1.1);} */
+
+/* .artA{ animation-name: art1; animation-duration: 1.5s; animation-delay: 0.5s; }
+@keyframes art1{
+    from{ transform: translateX(-500px); opacity: 0;}
+    to{ transform: translateX(0);  opacity: 1;}
+} */
+
+
+.box{width: 800px; margin: 0 auto; padding: 20px 40px; background:rgba(0,0,0,0.5);}
+.box ul { border: 1px solid #fff; padding: 20px; margin-bottom: 0;}
+.box li {color: #fff; line-height: 40px;  }
+.fr {float: right;}
+.t1 li{float: left; margin-left:70px;}
+.t1 li a{color:#fff;;} 

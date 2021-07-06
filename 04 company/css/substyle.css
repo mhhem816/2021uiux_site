@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+#header{ width: 1240px; margin:0 auto; position: relative;}
+#header .logo{float: left;}
+#header .logo h4{ text-align:center; color:#003f53; font-weight: bold;}
+
+#header .myTopMenu {float: left; width:800px;
+    position: absolute; top:50%; left:50%; transform: translate(-50%,-50%);}
+#header .myTopMenu li a:hover{border-bottom:5px solid #004072; color:#2E7BA7}
+#header .myTopMenu li{float: left;}
+#header .myTopMenu li + li { margin-left: 60px;}
+#header .myTopMenu li a{ line-height: 50px; display: block;font-weight:bold; font-size:20px;}
+
+#header .other_menu{float: right; width: 127px; height: 13px;}
+#header .other_menu li{float: left;}
+#header .other_menu li a{
+color:rgb(48, 48, 48); font-family: "Sansation";
+font-weight: bold;
+font-size: 12px;
+line-height:50px; display: block; line-height: 100px;}
+
+/* footer */
+footer{width: 100%;}
+.footerWrap{width:1240px; margin: 0 auto;}
+.footerWrap .seoulsky img{float: left; margin-bottom: 16px;}
+.footerWrap .seoulsky_txt{float: right;}
+.footerWrap .seoulsky_txt li{font-family: "Roboto";
+font-size: 12px;
+line-height:60px; letter-spacing: 0.18em; padding: 0 5px;
+color: #646464; float: left;
+position: relative;
+
+}
+.footerWrap .seoulsky_txt li:after{content:"";width:1px; height:12px; position: absolute; right:0;
+top:24px; }
+.footerWrap .seoulsky_txt li:last-child:after{content: ""; display: none;}
+.footerWrap .seoulsky_txt li span{color:#242424; font-weight: bold; font-size: 14px;line-height: 16px; letter-spacing: 0.18em; }
+.footerWrap .address{float: left;}
+.footerWrap .address li{font-size: 12px; line-height: 17px; letter-spacing: 0.415em; color:#242424; font-weight: bold;}
+.footerWrap .day {float: right;}
+.footerWrap .day li{font-weight: bold;font-size: 12px;line-height: 14px; letter-spacing: 0.4em; color: #646464;}

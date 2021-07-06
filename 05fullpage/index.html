@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fullpage</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#fullpage").fullpage({
+                menu:".topMenu",
+                anchors:['m1st','m2st','m3st','m4st','m5st'],
+                navigation:true,
+                navigationTooltips: ['소장품', '교육', '연구', '전시','footer'],
+		        showActiveTooltip: true,
+                responsiveWidth: 1000,
+                afterLoad:function(anchorslink,index){
+                    
+                    console.log(anchorslink+ ', ' + index);
+
+                    if(index == 1){
+                        $(".txt1st").addClass("end");
+
+                    }else{
+                        $(".txt1st").removeClass("end")
+                    }
+                    if(index == 2){
+                        $(".artA").addClass("end");
+
+                    }else{
+                        $(".artA").removeClass("end")
+                    }
+                  
+
+
+                }
+            })
+        })
+    </script>
+
+</head>
+<body>
+
+ <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-4">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="">
+            </a>
+
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav topMenu ml-md-auto mr-md-auto">
+                        <li class="nav-item"  data-menuanchor="m1st">
+                          <a class="nav-link text-center" href="#m1st">소장품 </a>
+                        </li>
+                        <li class="nav-item" data-menuanchor="m2st">
+                          <a class="nav-link  text-center" href="#m2st">교육</a>
+                        </li>
+                        <li class="nav-item" data-menuanchor="m3st">
+                          <a class="nav-link  text-center" href="#m3st">연구</a>
+                        </li>
+                        <li class="nav-item" data-menuanchor="m4st">
+                            <a class="nav-link  text-center" href="#m4st">전시</a>
+                        </li>
+                      </ul>
+
+              <ul class="icon navbar-nav topMenu d-none d-md-block clearfix">
+                  <li class="nav-item mr-4">
+                      <a href=""><img src="images/youtube_icon.png" alt=""></a>
+                    </li>
+                  <li class="nav-item mr-4">
+                      <a href=""><img src="images/facebook_icon.png" alt=""></a>
+                    </li>
+                  <li class="nav-item mr-4">
+                      <a href=""><img src="images/post_icon.png" alt=""></a>
+                    </li>
+                  <li class="nav-item mr-4">
+                      <a href=""><img src="images/blog_icon.png" alt=""></a>
+                    </li>
+                  <li class="nav-item">
+                      <a href=""><img src="images/instagram_icon.png" alt=""></a>
+                    </li>
+              </ul>
+        </nav>
+
+ </header>
+    <div id="fullpage">
+        <div class="section page1" data-anchor="m1st">
+            <div class="container">
+               <div class="txt1st sm-text-center text-white">
+                   <h3 class="mb-5">제12회 畵歌<br>
+                    《경이로운 울림 Forest of Wonders》</h3>
+                   <p>2021년 6월 10일(목) – 7월 30일(금)</p>
+               </div>
+            </div>
+            <div class="scroll">
+                <a href="#m1st"><img src="images/scrolll.png" alt=""></a>
+            </div>
+        </div>
+        <div class="section page2" data-anchor="m2st">
+            <div class="container">
+                <div class="row flex-nowrap">
+                    <div class="artA col-6">
+                        <img src="images/art01.png" alt="!#">
+                    </div>
+                    <div class="txt2st text-white col-6">
+                        <h3 class="mb-5">(재)한원 미술관</h3>
+                        <h5 class="mb-5">ABOUT<br>
+                            HANWON MUSEUM</h5>
+                        <p>한원 미술관은 미술 분야의 전시와 연구라는 설립취지를 바탕으로,<br>
+                            구상화 중 풍경화 분야를 시작으로 미디어, 한국화에 이르기까지 20년 역사성과 정체성을<br>
+                            지켜오고 있으며,  한국 미술계의 균형있는 발전을 위하여<br>
+                            소신있는 전시와 연구를 목표로 하고 있습니다.
+                        </p>
+                        <div>
+                            <ul class="t1 clearfix">
+                                <li><a href="#">역사</a></li>
+                                <li><a href="#">전시</a></li>
+                                <li><a href="#">교육</a></li>
+                                <li><a href="#">문화</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="scroll">
+                <a href="#m2st"><img src="images/scrolll.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="section page3" data-anchor="m3st">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 txt3st text-center">
+                        <h3>미술관 전시회</h3>
+                        <h5>HANWON MUSEUM OF ART</h5>
+                        <p class="text-center text-white">현재 전시되어 있는 작품회를 한눈에 확인할수 있습니다.</p>
+                    </div>
+                    
+                </div>
+                <div class="row">
+
+                    <div class="col-6 col-md-4 offset-md-2 offset-0 "><img src="images/art02.png" alt="" class="w-100"></div>
+                    <div class="col-6 col-md-4"><img src="images/art03.png" alt=""  class="w-100"></div>
+
+                   
+                </div>
+            </div>
+        
+            <div class="scroll">
+                <a href="#m3st"><img src="images/scrolll.png" alt=""></a>
+            </div>
+        </div>
+        <div class="section page4" data-anchor="m4st">
+            <div class="box">
+                <ul class="clearfix">
+                    <li><p class="">6월 ‘문화가 있는 날’ 특별 프로그램 안내 <span class="fr">한원미술관.</span></p></li>
+                    <li><p class="">소장품 특별전과 연계한 〈도심 속 예술놀이터〉 프로그램 안내 <span class="fr">한원미술관.</span></p></li>
+                    <li><p class="">전윤정 초대전과 연계한 〈도심 속 예술놀이터〉 프로그램 안내<span class="fr">한원미술관.</span></p></li>
+                    <li><p class="">2020 추석연휴 휴관안내. <span class="fr">한원미술관.</span></p></li>
+                    <li><p class="">2020 신축년 새해 복많이 받으세요 <span class="fr">한원미술관.</span></p></li>
+                    <li><p class="">2019 KB 박물관노닐기 프로그램 안내. <span class="fr">한원미술관.</span></p></li>
+                    <li><p class="">2018 Young Artist PROJECT 꿈 드림 워크숍 안내. <span class="fr">한원미술관.</span></p></li>
+                </ul>
+            </div>
+            <div class="scroll">
+                <a href="#m4st"><img src="images/scrolll.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <img src="images/logo.png" alt="">
+                    <div class="section page5 fp-auto-height py-5 bg-dark text-white" data-anchor="m5st">
+                        <div class="container text-center">
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, qui.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
