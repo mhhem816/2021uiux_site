@@ -53,3 +53,6 @@ text-shadow: -1.5px 0  #eee, 0 1.5px #eee, 1.5px 0  #eee, 0 -1.5px  #eee;}
 .sectionWrap .sliderTitle>p:before{position: absolute; left: -15px; top: 0;
 content: ""; width:3px; height: 24px; background:#5c3fa3;}
 
+/*containerWrap*/
+.container > ul > li{width: 25%; float: left;}
+.info {display: none;}
