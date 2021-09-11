@@ -43,7 +43,7 @@
 
 #contents{
     height:1300px;
-    background-image: url(../images/bg_dot.gif),url(../images/main_bg.jpg);
+    background-image: url("../images/bg_dot.gif"),url("../images/main_bg.jpg");
     background-repeat: repeat,no-repeat;
     background-position:center;
     background-size:auto,cover;
